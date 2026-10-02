@@ -1,0 +1,273 @@
+﻿/* ===== General ===== */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 25px auto;
+}
+
+.page-title {
+    text-align: center;
+    color: #d35400;
+    margin-bottom: 25px;
+}
+
+/* ===== Navigation Bar ===== */
+.navbar {
+    background-color: #d35400;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+    .navbar .logo {
+        color: white;
+        font-size: 22px;
+        font-weight: bold;
+        padding: 15px 0;
+        text-decoration: none;
+    }
+
+    .navbar .menu a {
+        color: white;
+        text-decoration: none;
+        padding: 18px 14px;
+        display: inline-block;
+        font-size: 15px;
+    }
+
+        .navbar .menu a:hover {
+            background-color: #a84300;
+        }
+
+/* ===== Hero (Home page banner) ===== */
+.hero {
+    background-color: #fff3e0;
+    text-align: center;
+    padding: 60px 20px;
+    border-radius: 8px;
+}
+
+    .hero h1 {
+        font-size: 36px;
+        color: #d35400;
+        margin: 0 0 10px 0;
+    }
+
+    .hero p {
+        font-size: 18px;
+        color: #555;
+    }
+
+/* ===== Buttons ===== */
+.btn {
+    background-color: #d35400;
+    color: white;
+    border: none;
+    padding: 9px 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 15px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+    .btn:hover {
+        background-color: #a84300;
+    }
+
+.btn-green {
+    background-color: #27ae60;
+}
+
+    .btn-green:hover {
+        background-color: #1e8449;
+    }
+
+.btn-red {
+    background-color: #c0392b;
+}
+
+    .btn-red:hover {
+        background-color: #922b21;
+    }
+
+/* ===== Forms (Login, Register, Checkout, Admin) ===== */
+.form-box {
+    background-color: white;
+    width: 100%;
+    max-width: 450px;
+    margin: 0 auto;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+    .form-box h2 {
+        text-align: center;
+        color: #d35400;
+        margin-top: 0;
+    }
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+    .form-group label {
+        display: block;
+        margin-bottom: 5px;
+        font-weight: bold;
+    }
+
+.form-control {
+    width: 100%;
+    padding: 9px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+/* ===== Messages ===== */
+.message {
+    text-align: center;
+    font-weight: bold;
+    margin: 10px 0;
+    display: block;
+}
+
+.error {
+    color: #c0392b;
+}
+
+.success {
+    color: #27ae60;
+}
+
+/* ===== Food Menu Cards ===== */
+.food-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.food-card {
+    background-color: white;
+    width: 240px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+    text-align: center;
+    padding-bottom: 15px;
+}
+
+    .food-card img {
+        width: 100%;
+        height: 160px;
+        object-fit: cover;
+        background-color: #eee;
+    }
+
+    .food-card h3 {
+        margin: 10px 0 3px 0;
+    }
+
+    .food-card .category {
+        color: #888;
+        font-size: 13px;
+    }
+
+    .food-card .desc {
+        font-size: 13px;
+        color: #555;
+        padding: 5px 12px;
+        min-height: 50px;
+    }
+
+    .food-card .price {
+        color: #d35400;
+        font-size: 18px;
+        font-weight: bold;
+        margin: 5px 0 10px 0;
+    }
+
+/* ===== Tables (Cart, Orders, Admin) ===== */
+.data-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+    .data-table th {
+        background-color: #d35400;
+        color: white;
+        padding: 12px;
+        text-align: left;
+    }
+
+    .data-table td {
+        padding: 10px 12px;
+        border-bottom: 1px solid #ddd;
+    }
+
+    .data-table tr:hover td {
+        background-color: #fff3e0;
+    }
+
+    .data-table img {
+        width: 60px;
+        height: 50px;
+        object-fit: cover;
+        border-radius: 4px;
+    }
+
+.qty-box {
+    width: 60px;
+    padding: 5px;
+    text-align: center;
+}
+
+/* ===== Totals ===== */
+.total-box {
+    text-align: right;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 20px 0;
+    color: #d35400;
+}
+
+/* ===== Admin Dashboard Boxes ===== */
+.admin-box {
+    background-color: white;
+    width: 280px;
+    padding: 30px 20px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+    .admin-box h3 {
+        color: #d35400;
+    }
+
+/* ===== Footer ===== */
+.footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #333;
+    color: white;
+    margin-top: 40px;
+}
